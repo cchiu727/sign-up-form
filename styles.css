@@ -78,12 +78,22 @@ body {
 
 .form-header {
     font-size: 24px;
+    padding-bottom: 25px;
 }
 
-.sign-up-form {
-    padding: 50px;
+.form-container {
+    padding: 25px 50px;
     box-shadow: 10px 2px 2px #bebebe;
-
-    display: flex;
 }
 
+#sign-up-form {
+    display: flex;
+    gap: 10vw;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    font-size: 14px;
+}
