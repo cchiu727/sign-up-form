@@ -25,6 +25,7 @@ time, mark, audio, video {
 :root {
     --header-font-color: #202020;
     --label-font-color: #555555;
+    --primary-color: #4d743e;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
 }
 
 button {
-    background-color: #4d743e;
+    background-color: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -44,6 +45,10 @@ button {
 
     padding: 10px 25px;
     font-size: 16px;
+}
+
+a {
+    color: inherit;
 }
 
 .main {
@@ -92,10 +97,6 @@ button {
     color: white;
 }
 
-.banner-img-credits a {
-    color: white;
-}
-
 /* --------------------- */
 
 /* Right content */
@@ -108,7 +109,7 @@ button {
 }
 
 .form-header {
-    font-size: 24px;
+    font-size: 32px;
     padding-bottom: 25px;
 }
 
@@ -133,11 +134,19 @@ button {
     flex-direction: column;
     padding-bottom: 25px;
     color: var(--label-font-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .required {
     color: #e40000;
+}
+
+.sign-in {
+    margin: 30px 0px;
+}
+
+.sign-in a {
+    color: var(--primary-color);
 }
 
 /* --------------------- */
