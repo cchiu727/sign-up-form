@@ -21,6 +21,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+:root {
+    --header-font-color: #2c2c2c;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -36,23 +40,23 @@ body {
 /* Left content */
 
 .left-banner-img {
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .left-banner-logo {
-    position: relative;
-    bottom: 80vh;
+    position: absolute;
+    top: calc(100vh * 0.25);
+    width: 35vw;
+    padding: 10px 0px;
+
     background-color: rgba(0, 0, 0, 0.5);
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 15vh;
     margin: 0;
-    padding: 5px;
 }
 
 .odin-logo-img {
@@ -63,6 +67,19 @@ body {
 .logo-header {
     color: #FFFFFF;
     font-size: 72px;
+    margin: 0;
+}
+
+.banner-img-credits {
+    position: absolute;
+    top: 95%;
+    width: 35vw;
+    text-align: center;
+    color: white;
+}
+
+.banner-img-credits a {
+    color: white;
 }
 
 /* --------------------- */
@@ -70,10 +87,10 @@ body {
 /* Right content */
 
 .info {
-    background-color: #e2e2e2;
+    background-color: #e6e6e6;
+    color: var(--header-font-color);
     padding: 100px 50px 50px;
     font-size: 24px;
-    font-weight: bold;
 }
 
 .form-header {
