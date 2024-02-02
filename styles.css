@@ -119,7 +119,13 @@ button {
 
 .form-fields-container {
     display: flex;
-    gap: 10vw;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 5vw;
 }
 
 .form-field {
@@ -133,3 +139,5 @@ button {
 .required {
     color: #e40000;
 }
+
+/* --------------------- */
