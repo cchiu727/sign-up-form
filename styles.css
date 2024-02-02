@@ -24,6 +24,7 @@ time, mark, audio, video {
 
 :root {
     --header-font-color: #202020;
+    --label-font-color: #555555;
 }
 
 * {
@@ -32,6 +33,17 @@ time, mark, audio, video {
 
 body {
     margin: 0;
+}
+
+button {
+    background-color: #4d743e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(29, 29, 29, 0.5);
+
+    padding: 10px 25px;
+    font-size: 16px;
 }
 
 .main {
@@ -105,7 +117,7 @@ body {
     box-shadow: 10px 2px 2px #bebebe;
 }
 
-#sign-up-form {
+.form-fields-container {
     display: flex;
     gap: 10vw;
 }
@@ -114,5 +126,10 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
+    color: var(--label-font-color);
     font-size: 14px;
+}
+
+.required {
+    color: #e40000;
 }
